@@ -61,8 +61,8 @@ def standardize_food_waste_df(df: pd.DataFrame, source_name: str) -> pd.DataFram
         raise ValueError(f"No numeric waste-like target found in source={source_name}")
 
     possible_loc_cols = [
-        c for c in df.columns
-        if any(k in c for k in ["location", "site", "kitchen", "canteen", "restaurant", "facility", "country"])
+    c for c in df.columns
+    if any(k in c for k in ["location", "site", "kitchen", "canteen", "restaurant", "facility"])
     ]
     if possible_loc_cols:
         loc_col = possible_loc_cols[0]
