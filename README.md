@@ -1,0 +1,1 @@
+# campus-waste-intelligent-system
